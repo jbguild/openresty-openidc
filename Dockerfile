@@ -1,6 +1,3 @@
-FROM openresty/openresty:stretch
+FROM openresty/openresty:stretch-fat
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        openresty-opm \
-    && opm get zmartzone/lua-resty-openidc
+RUN DEBIAN_FRONTEND=noninteractive opm get zmartzone/lua-resty-openidc
