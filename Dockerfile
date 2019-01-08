@@ -1,3 +1,3 @@
 FROM openresty/openresty:stretch-fat
 
-RUN opm get zmartzone/lua-resty-openidc
+RUN opm install zmartzone/lua-resty-openidc
